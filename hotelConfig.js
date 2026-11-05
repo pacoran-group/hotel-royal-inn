@@ -37,19 +37,19 @@ const hotelConfig = {
   // Fasilitas Umum Unggulan Hotel
   facilities: [
     {
-      icon: "wifi",
-      title: "Wi-Fi Berkecepatan Tinggi",
-      description: "Internet stabil gratis di seluruh area hotel dan setiap kamar."
+      icon: "shield",
+      title: "Keamanan & CCTV 24 Jam",
+      description: "Lingkungan penginapan aman, tertib, dan terpantau kamera CCTV serta petugas 24 jam."
     },
     {
       icon: "clock",
-      title: "Resepsionis & Security 24 Jam",
+      title: "Resepsionis 24 Jam",
       description: "Layanan check-in dan check-out fleksibel dengan sambutan ramah setiap saat."
     },
     {
       icon: "car",
       title: "Area Parkir Luas & Aman",
-      description: "Lahan parkir mobil dan motor yang luas, aman, dan terpantau petugas."
+      description: "Lahan parkir mobil dan motor yang luas, aman, dan mudah diakses langsung dari jalan raya."
     },
     {
       icon: "sparkles",
@@ -93,10 +93,10 @@ const hotelConfig = {
       gallery: [
         "./Ekonomi.jpeg"
       ],
-      description: "Kamar nyaman dengan Double Bed empuk, pendingin ruangan (AC) dingin, dan TV LED. Pilihan hemat untuk istirahat tenang.",
+      description: "Kamar nyaman dengan Double Bed empuk, pendingin ruangan (AC), dan TV LED. Pilihan hemat untuk istirahat tenang.",
       highlights: [
         "Double Bed Nyaman",
-        "AC (Air Conditioner) Dingin",
+        "Memiliki AC (Air Conditioner)",
         "TV LED Layar Datar",
         "Kapasitas 2 Orang (2 Pax)"
       ],
@@ -104,10 +104,10 @@ const hotelConfig = {
         "Double Bed Empuk & Bersih",
         "Pendingin Ruangan (AC)",
         "TV LED Digital",
-        "Wi-Fi Gratis Kencang",
         "Kamar Mandi Dalam",
         "Air Mineral Gratis",
-        "Stopkontak Samping Ranjang"
+        "Stopkontak Samping Ranjang",
+        "Layanan Kebersihan Teratur"
       ]
     },
     {
@@ -124,7 +124,7 @@ const hotelConfig = {
         "./Standard%20Room%20(1).jpeg",
         "./Standard%20Room%20(2).jpeg"
       ],
-      description: "Kamar dengan 2 ranjang terpisah (Two Bed / Twin Bed), pendingin ruangan (AC) sejuk, dan TV LED. Sangat cocok untuk rekan kerja atau sahabat.",
+      description: "Kamar dengan 2 ranjang terpisah (Two Bed / Twin Bed), pendingin ruangan (AC), dan TV LED. Sangat cocok untuk rekan kerja atau sahabat.",
       highlights: [
         "Two Bed (Twin Bed Terpisah)",
         "AC (Air Conditioner)",
@@ -133,12 +133,12 @@ const hotelConfig = {
       ],
       amenities: [
         "Two Bed (2 Ranjang Terpisah Bersih)",
-        "AC Dingin Terawat",
+        "AC (Air Conditioner)",
         "TV LED Layar Datar",
-        "Wi-Fi Kecepatan Tinggi",
         "Kamar Mandi Dalam Higienis",
         "Handuk & Perlengkapan Mandi",
-        "Air Mineral Botol"
+        "Air Mineral Botol",
+        "Stopkontak Samping Ranjang"
       ]
     },
     {
@@ -152,8 +152,7 @@ const hotelConfig = {
       size: "22 m²",
       image: "./Superior.jpeg",
       gallery: [
-        "./Superior.jpeg",
-        "./Standard%20Room%20(2).jpeg"
+        "./Superior.jpeg"
       ],
       description: "Kamar Superior dengan Two Bed, dilengkapi pendingin ruangan (AC), shower air hangat (Hot Water), TV LED, dan paket perlengkapan mandi lengkap (Amenities).",
       highlights: [
@@ -168,7 +167,6 @@ const hotelConfig = {
         "Pendingin Ruangan (AC)",
         "TV LED Layar Datar",
         "Full Toiletries & Amenities Mandi",
-        "Wi-Fi Kencang",
         "Meja & Lemari Pakaian",
         "Air Mineral Gratis"
       ]
@@ -187,20 +185,20 @@ const hotelConfig = {
         "./Deluxe%20A%20(1).jpeg",
         "./Deluxe%20A%20(2).jpeg"
       ],
-      description: "Kamar favorit dengan ranjang Double Bed (Big Bed), Smart TV untuk hiburan YouTube dan streaming, AC sejuk, shower air hangat, dan amenities.",
+      description: "Kamar favorit dengan ranjang Double Bed (Big Bed), Smart TV untuk hiburan YouTube dan streaming, AC, shower air hangat, dan amenities.",
       highlights: [
         "Double Bed (Big Bed Empuk)",
         "Smart TV (YouTube Ready)",
         "Hot Water (Air Hangat)",
-        "AC Dingin & Amenities"
+        "AC & Amenities"
       ],
       amenities: [
         "Double Bed (Big Bed King Size)",
-        "Smart TV dengan Akses Aplikasi Streaming",
+        "Smart TV Layar Datar",
         "Shower Air Hangat (Hot Water)",
-        "AC Dingin Senyap",
+        "Pendingin Ruangan (AC)",
         "Amenities Mandi Lengkap",
-        "Wi-Fi Dedicated Kencang",
+        "Sandal Kamar & Handuk Bersih",
         "Meja Kerja & Cermin Rias",
         "Air Mineral Gratis"
       ]
@@ -232,9 +230,9 @@ const hotelConfig = {
         "Smart TV Layar Datar",
         "Teko Listrik (Electric Kettle) + Kopi/Teh",
         "Shower Air Hangat (Hot Water)",
-        "AC Dingin & Segar",
+        "Pendingin Ruangan (AC)",
         "Amenities Lengkap & Sandal Kamar",
-        "Wi-Fi Kecepatan Tinggi"
+        "Lemari Pakaian & Meja Rias"
       ]
     },
     {
@@ -251,7 +249,7 @@ const hotelConfig = {
         "./Deluxe%20C%20(1).jpeg",
         "./Deluxe%20C%20(2).jpeg"
       ],
-      description: "Pilihan kamar dengan 2 ranjang terpisah (Two Bed), Smart TV, Electric Kettle, paket sarapan untuk 2 orang, AC dingin, dan shower air hangat.",
+      description: "Pilihan kamar dengan 2 ranjang terpisah (Two Bed), Smart TV, Electric Kettle, paket sarapan untuk 2 orang, AC, dan shower air hangat.",
       highlights: [
         "Two Bed (2 Ranjang Terpisah Nyaman)",
         "Termasuk Breakfast 2 Pax",
@@ -264,9 +262,9 @@ const hotelConfig = {
         "Smart TV Layar Lebar",
         "Electric Kettle + Teh & Kopi Sachet",
         "Hot Water Shower (Air Hangat Lancar)",
-        "AC Dingin Sejuk",
-        "Amenities Mandi Lengkap",
-        "Wi-Fi Kencang"
+        "Pendingin Ruangan (AC)",
+        "Amenities Mandi Lengkap & Sandal Kamar",
+        "Meja & Lemari Pakaian"
       ]
     },
     {
@@ -296,9 +294,9 @@ const hotelConfig = {
         "Shower Air Hangat (Hot Water)",
         "Sarapan Pagi Gratis untuk 2 Pax (Breakfast 2 Pax)",
         "Teko Listrik (Electric Kettle) + Kopi/Teh",
-        "AC Dingin & TV Layar Datar",
-        "Paket Amenities Mandi Lengkap",
-        "Wi-Fi Kencang Tanpa Batas"
+        "Pendingin Ruangan (AC)",
+        "TV Layar Datar",
+        "Paket Amenities Mandi Lengkap"
       ]
     }
   ],
@@ -333,7 +331,7 @@ const hotelConfig = {
       name: "Hendrik Setiawan",
       origin: "Jember (Transit Wisata)",
       rating: 5,
-      comment: "Kamar Standart Two Bed AC-nya dingin dan suasananya tenang. Parkir luas dan staf resepsionis melayani dengan ramah meski kami tiba larut malam.",
+      comment: "Kamar Standart Two Bed AC-nya nyaman dan suasananya tenang. Parkir luas dan staf resepsionis melayani dengan ramah meski kami tiba larut malam.",
       stayedRoom: "Standart"
     }
   ],

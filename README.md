@@ -37,7 +37,7 @@
    - Akses dekat ke Pasar & Pertokoan Jajag, Minimarket 24 jam, SPBU, Puskesmas Gambiran, dan Stasiun Kalisetail.
 
 6. **Fasilitas Hotel & Tanya Jawab (FAQ)**:
-   - Resepsionis & Keamanan 24 jam, Wi-Fi kencang, parkir luas, air panas, dan FAQ accordion.
+   - Resepsionis & Keamanan 24 jam, parkir luas, air panas, dan FAQ accordion.
 
 7. **Tombol Chat WhatsApp Mengambang (Floating Action Button)**:
    - Tombol cepat di pojok kanan bawah dengan efek pulse agar tamu dapat langsung bertanya kapan saja.
