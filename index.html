@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Royal Inn - Penginapan Nyaman, Bersih & Tarif Bersahabat di Gambiran</title>
+  <meta name="description" content="Selamat datang di Hotel Royal Inn (Pancoran Group). Penginapan nyaman, bersih, dan berfasilitas lengkap di Gambiran, Banyuwangi. Reservasi cepat via WhatsApp.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏨</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif']
+          },
+          colors: {
+            royal: {
+              50: '#faf8f5',
+              100: '#f5efeb',
+              200: '#ebdcd3',
+              300: '#dec2b3',
+              400: '#cd9f88',
+              500: '#bf8266',
+              600: '#b16f54',
+              700: '#945842',
+              800: '#794838',
+              900: '#633c30',
+              950: '#351d17'
+            },
+            amber: {
+              450: '#f59e0b',
+              550: '#d97706',
+              650: '#b45309'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar & Utility */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c59b27;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b16f54;
+    }
+    .text-balance {
+      text-wrap: balance;
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- ================= TOP NOTIFICATION / HEADER BAR ================= -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2.5 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2.5 flex-wrap justify-center md:justify-start">
+        <span class="inline-flex items-center gap-1.5 bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded-full font-semibold text-[11px] border border-amber-500/30 whitespace-nowrap">
+          <span>★</span> Pancoran Group • Penginapan Nyaman & Terpercaya
+        </span>
+        <span class="hidden md:inline text-stone-500">|</span>
+        <span class="hidden md:inline text-stone-300 whitespace-nowrap">Check-in: 14:00 WIB • Check-out: 12:00 WIB</span>
+      </div>
+      <div class="flex items-center gap-3 shrink-0 whitespace-nowrap">
+        <a href="#lokasi" class="hover:text-amber-400 transition-colors flex items-center gap-1 text-xs text-stone-300 whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Gambiran, Banyuwangi</span>
+        </a>
+        <span class="text-stone-600">•</span>
+        <a href="https://wa.me/6281233092237" target="_blank" class="wa-direct-link text-amber-400 font-bold hover:underline flex items-center gap-1 text-xs whitespace-nowrap">
+          <span>WhatsApp:</span> <span class="hotel-phone font-semibold">+62 812-3309-2237</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STICKY NAVBAR ================= -->
+  <header id="main-navbar" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/80 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-700 to-amber-500 flex items-center justify-center text-white shadow-md shadow-amber-600/30 group-hover:scale-105 transition-transform duration-300">
+            <span class="font-serif text-2xl font-bold tracking-wider">R</span>
+          </div>
+          <div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-stone-900 group-hover:text-amber-700 transition-colors block leading-tight">
+              Hotel Royal Inn
+            </span>
+            <span class="text-[11px] font-semibold text-amber-600 uppercase tracking-widest block">
+              Pancoran Group
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-stone-700">
+          <a href="#beranda" class="hover:text-amber-700 transition-colors">Beranda</a>
+          <a href="#tentang" class="hover:text-amber-700 transition-colors">Tentang Hotel</a>
+          <a href="#kamar" class="hover:text-amber-700 transition-colors">Pilihan Kamar</a>
+          <a href="#fasilitas" class="hover:text-amber-700 transition-colors">Fasilitas</a>
+          <a href="#lokasi" class="hover:text-amber-700 transition-colors">Lokasi & Akses</a>
+          <a href="#faq" class="hover:text-amber-700 transition-colors">FAQ</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden sm:flex items-center gap-3 shrink-0">
+          <button onclick="openReservationModal()" class="py-2.5 px-5 rounded-xl bg-amber-600 hover:bg-amber-700 active:bg-amber-800 text-white font-bold text-sm shadow-md shadow-amber-600/20 hover:shadow-lg transition-all duration-200 flex items-center gap-2 whitespace-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+            <span>Pesan Kamar Sekarang</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex md:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-xl text-stone-700 hover:text-stone-900 hover:bg-stone-100 focus:outline-none" aria-label="Toggle Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-nav" class="hidden md:hidden border-t border-stone-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#beranda" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">Beranda</a>
+      <a href="#tentang" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">Tentang Hotel</a>
+      <a href="#kamar" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">Pilihan Kamar (7 Tipe)</a>
+      <a href="#fasilitas" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">Fasilitas</a>
+      <a href="#lokasi" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">Lokasi & Peta</a>
+      <a href="#faq" class="mobile-nav-link block py-2 px-3 rounded-lg text-base font-semibold text-stone-800 hover:bg-amber-50 hover:text-amber-700">FAQ</a>
+      <div class="pt-3 border-t border-stone-100 flex flex-col gap-2">
+        <button onclick="openReservationModal()" class="w-full py-3 px-4 rounded-xl bg-amber-600 text-white font-bold text-center shadow">
+          Pesan Kamar Langsung (WhatsApp)
+        </button>
+        <a href="#" class="wa-direct-link w-full py-2.5 px-4 rounded-xl border border-stone-300 text-stone-700 font-semibold text-center text-sm">
+          Tanya Resepsionis via WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="beranda" class="relative min-h-[90vh] flex items-center justify-center pt-8 pb-20 overflow-hidden">
+    <!-- Hero Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="./Deluxe%20A%20(1).jpeg" alt="Hotel Royal Inn Ambience" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-stone-900/80 to-stone-950/70"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Headline & Introduction -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md border border-amber-400/30 px-4 py-1.5 rounded-full text-amber-300 text-xs sm:text-sm font-semibold">
+            <span>✨</span> Penginapan Bersih, Fasilitas Lengkap & Tarif Bersahabat
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] text-balance">
+            Kenyamanan Menginap Nyaman, <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-100">
+              Harga Tetap Terjangkau
+            </span>
+          </h1>
+
+          <p class="hotel-subtagline text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed text-balance">
+            Pilihan menginap terbaik untuk liburan keluarga, perjalanan bisnis, maupun transit santai dengan pelayanan ramah 24 jam dan fasilitas terawat.
+          </p>
+
+          <!-- Badges / Pill Tags -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-2">
+            <span class="bg-white/10 backdrop-blur-sm border border-white/15 px-3 py-1 rounded-lg text-xs font-medium text-stone-200">
+              ✓ Smart TV & Wi-Fi Kencang
+            </span>
+            <span class="bg-white/10 backdrop-blur-sm border border-white/15 px-3 py-1 rounded-lg text-xs font-medium text-stone-200">
+              ✓ Water Heater (Air Hangat)
+            </span>
+            <span class="bg-white/10 backdrop-blur-sm border border-white/15 px-3 py-1 rounded-lg text-xs font-medium text-stone-200">
+              ✓ Parkir Luas & Aman 24 Jam
+            </span>
+            <span class="bg-white/10 backdrop-blur-sm border border-white/15 px-3 py-1 rounded-lg text-xs font-medium text-stone-200">
+              ✓ Seprai Bersih Higienis
+            </span>
+          </div>
+
+          <!-- Hero Stats Cards -->
+          <div id="hero-stats-container" class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 items-stretch">
+            <!-- Rendered by JS -->
+          </div>
+
+        </div>
+
+        <!-- Right: Quick Booking Widget -->
+        <div class="lg:col-span-5">
+          <div class="bg-white text-stone-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-white/40 backdrop-blur-lg">
+            
+            <div class="border-b border-stone-200 pb-4 mb-6">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-600 block">Reservasi Cepat</span>
+              <h2 class="text-2xl font-black text-stone-900 mt-1">Cek Ketersediaan Kamar</h2>
+              <p class="text-xs text-stone-500 mt-1">Pesan langsung tanpa perantara, terhubung langsung ke WhatsApp Admin.</p>
+            </div>
+
+            <form onsubmit="handleHeroQuickBook(event)" class="space-y-4">
+              
+              <!-- Check-in & Check-out -->
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Check-in</label>
+                  <input type="date" id="hero-checkin" required class="w-full px-3 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm font-medium bg-stone-50">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Check-out</label>
+                  <input type="date" id="hero-checkout" required class="w-full px-3 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm font-medium bg-stone-50">
+                </div>
+              </div>
+
+              <!-- Pilihan Tipe Kamar -->
+              <div>
+                <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Pilih Tipe Kamar</label>
+                <select id="hero-roomtype" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm font-medium bg-stone-50">
+                  <!-- Populated dynamically by JS -->
+                </select>
+              </div>
+
+              <!-- Jumlah Tamu -->
+              <div>
+                <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Jumlah Tamu</label>
+                <select id="hero-guests" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm font-medium bg-stone-50">
+                  <option value="1 Tamu">1 Orang (Dewasa)</option>
+                  <option value="2 Tamu Dewasa" selected>2 Orang (Dewasa)</option>
+                  <option value="3 Tamu (Keluarga)">3 Orang (Keluarga)</option>
+                  <option value="4 Tamu (Family Room)">4 - 5 Orang (Family Room)</option>
+                  <option value="Rombongan / Grup">Rombongan (> 5 Orang)</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-amber-600 hover:bg-amber-700 active:bg-amber-800 text-white font-bold text-base shadow-lg shadow-amber-600/30 hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 mt-2">
+                <span>Pesan Sekarang via WhatsApp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+
+              <p class="text-[11px] text-center text-stone-500 pt-1">
+                🔒 Tanpa biaya tersembunyi. Konfirmasi instan 24 jam.
+              </p>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TENTANG HOTEL ROYAL INN ================= -->
+  <section id="tentang" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Image Collage -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img src="./Deluxe%20B%20(1).jpeg" alt="Hotel Royal Inn Interior" class="w-full h-[420px] object-cover">
+          </div>
+          <!-- Floating Badge Experience -->
+          <div class="absolute -bottom-6 -right-4 sm:bottom-6 sm:-right-6 bg-stone-900 text-white p-5 rounded-2xl shadow-xl border border-amber-500/30 max-w-xs">
+            <div class="flex items-center gap-3">
+              <span class="text-3xl">⭐</span>
+              <div>
+                <p class="text-amber-400 font-extrabold text-sm">Standar Pelayanan Terbaik</p>
+                <p class="text-xs text-stone-300 mt-0.5 leading-snug">Komitmen kenyamanan maksimal dengan fasilitas terawat di setiap kamar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description Content -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            <span>🏨</span> Profil & Dedikasi Kami
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
+            Menghadirkan Kenyamanan Menginap Berkualitas Tanpa Menguras Anggaran
+          </h2>
+
+          <p class="text-stone-600 text-base leading-relaxed">
+            Dikelola dengan dedikasi di bawah <strong>Pancoran Group</strong>, <strong>Hotel Royal Inn</strong> menghadirkan suasana istirahat yang tenang, bersih, dan aman bagi wisatawan, pebisnis, maupun keluarga di Gambiran. Kami memadukan tarif ramah di kantong dengan fasilitas modern: kasur empuk berkualitas, kamar mandi berair hangat, AC dingin, Smart TV hiburan, dan Wi-Fi kencang.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">✓</div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Fasilitas Diperbarui</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Penambahan Smart TV, water heater bertenaga, & springbed baru.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">✓</div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Pelayanan Ramah 24 Jam</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Resepsionis & staf siap membantu check-in/out kapan saja.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">✓</div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Kebersihan Prioritas</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Seprai dicuci higienis & kamar disanitasi berkala.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">✓</div>
+              <div>
+                <h4 class="font-bold text-stone-900 text-sm">Akses Sangat Mudah</h4>
+                <p class="text-xs text-stone-500 mt-0.5">Dekat stasiun, minimarket, jalan tol, dan sentra kuliner.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex items-center gap-4">
+            <a href="#kamar" class="py-3 px-6 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-sm transition-colors shadow">
+              Lihat Tipe Kamar & Harga
+            </a>
+            <a href="#" class="wa-direct-link py-3 px-6 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-700 font-bold text-sm transition-colors">
+              Chat Resepsionis
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIPE-TIPE KAMAR & HARGA ================= -->
+  <section id="kamar" class="py-20 bg-stone-100/70 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          <span>🛏️</span> Ragam Pilihan Akomodasi
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight">
+          Pilihan Tipe Kamar & Fasilitas Lengkap
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Tersedia 7 pilihan tipe kamar mulai dari varian hemat untuk transit hingga Delux series dan Family Room dengan fasilitas Bathtub & sarapan untuk kenyamanan Anda.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
+        <button class="room-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-amber-700 text-white shadow-md transition-all duration-200" data-filter="all">
+          Semua Kamar (7 Tipe)
+        </button>
+        <button class="room-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all duration-200" data-filter="standard">
+          Ekonomi & Standart
+        </button>
+        <button class="room-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all duration-200" data-filter="superior">
+          Superior
+        </button>
+        <button class="room-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all duration-200" data-filter="deluxe">
+          Delux Series (A, B, C)
+        </button>
+        <button class="room-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-stone-100 text-stone-700 hover:bg-stone-200 transition-all duration-200" data-filter="family">
+          Family Room
+        </button>
+      </div>
+
+      <!-- Rooms Grid Container -->
+      <div id="rooms-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered dynamically by JS from hotelConfig.js -->
+      </div>
+
+      <!-- Custom Info Banner for Rooms -->
+      <div class="mt-12 bg-amber-50 border border-amber-200/80 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-600/15 text-amber-800 flex items-center justify-center text-2xl shrink-0">
+            💡
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-sm sm:text-base">Butuh Sewa Kamar untuk Rombongan atau Durasi Mingguan/Bulanan?</h4>
+            <p class="text-xs sm:text-sm text-stone-600 mt-0.5">Dapatkan penawaran harga korporat khusus dan diskon sewa jangka panjang.</p>
+          </div>
+        </div>
+        <a href="#" class="wa-direct-link whitespace-nowrap py-2.5 px-5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs sm:text-sm shadow transition-colors">
+          Negosiasi Harga Spesial
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FASILITAS HOTEL ================= -->
+  <section id="fasilitas" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          <span>✨</span> Standar Kenyamanan Tamu
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight">
+          Fasilitas Lengkap untuk Kenyamanan Anda
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Kami menyediakan berbagai fasilitas pendukung untuk memastikan waktu istirahat Anda tenang, aman, dan memuaskan selama tinggal di Hotel Royal Inn.
+        </p>
+      </div>
+
+      <!-- Facilities Grid -->
+      <div id="facilities-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= LOKASI STRATEGIS & AKSES PETA ================= -->
+  <section id="lokasi" class="py-20 bg-stone-100/80 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Address & Nearby Attractions -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            <span>📍</span> Lokasi Prima & Aksesibel
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 leading-tight">
+            Mudah Dijangkau dari Berbagai Sudut Kota
+          </h2>
+
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Hotel Royal Inn berlokasi tepat di tepi Jl. Raya Yosomulyo dengan akses transportasi lancar menuju stasiun kereta terdekat, pertokoan Jajag, serta kawasan kuliner lokal.
+          </p>
+
+          <!-- Detail Alamat Box -->
+          <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm space-y-2">
+            <span class="text-xs font-bold uppercase text-stone-400 block">Alamat Lengkap:</span>
+            <p class="hotel-address font-bold text-stone-800 text-base leading-snug">
+              Jl. Raya Yosomulyo No. 67, Dsn. Krajan 1, Desa Gambiran, Kec. Gambiran, Kab. Banyuwangi, Jawa Timur 68486
+            </p>
+            <p class="text-xs text-stone-500">
+              Lokasi strategis berada tepat di tepi Jalan Raya Yosomulyo, memudahkan akses kendaraan dan parkir.
+            </p>
+          </div>
+
+          <!-- Jarak ke Titik Penting -->
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">Akses & Titik Sekitar Terdekat:</h4>
+            <div id="nearby-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+          <!-- Tombol Buka Maps -->
+          <div class="pt-2">
+            <a id="maps-external-link" href="https://maps.app.goo.gl/wrQA9beSf9cx9Qnk6" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+              <span>Buka Lokasi di Google Maps</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Interactive Google Maps Iframe -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-3 rounded-3xl border border-stone-200 shadow-xl overflow-hidden h-[450px] lg:h-[520px]">
+            <iframe 
+              id="maps-iframe"
+              src="https://maps.google.com/maps?q=Jl.+Raya+Yosomulyo+No.+67,+Gambiran,+Banyuwangi&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full rounded-2xl border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI TAMU ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          <span>💬</span> Pengalaman Tamu
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight">
+          Apa Kata Mereka yang Pernah Menginap?
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+          Ulasan jujur dari tamu wisatawan, backpacker, keluarga, dan pebisnis yang telah merasakan kenyamanan menginap di Hotel Royal Inn.
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div id="testimonials-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-20 bg-stone-50 border-t border-stone-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-4 mb-12">
+        <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+          <span>❓</span> Bantuan & Informasi
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight">
+          Pertanyaan yang Sering Diajukan (FAQ)
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base">
+          Temukan jawaban cepat seputar kebijakan check-in, pemesanan, dan fasilitas di Hotel Royal Inn.
+        </p>
+      </div>
+
+      <!-- Accordion Container -->
+      <div id="faq-accordion" class="space-y-4">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Extra Contact CTA -->
+      <div class="text-center mt-12 p-8 bg-amber-50/70 border border-amber-200/80 rounded-3xl">
+        <h4 class="font-bold text-stone-900 text-lg">Punya Pertanyaan Lain yang Belum Terjawab?</h4>
+        <p class="text-sm text-stone-600 mt-1 mb-5">Tim resepsionis kami online 24 jam dan siap melayani dengan senang hati.</p>
+        <a href="#" class="wa-direct-link inline-flex items-center gap-2 py-3 px-6 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow transition-colors">
+          <span>Tanyakan Langsung via WhatsApp</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BANNER AJAKAN PESAN ================= -->
+  <section class="py-16 bg-gradient-to-r from-stone-900 via-amber-950 to-stone-900 text-white text-center relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 relative z-10 space-y-6">
+      <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Reservasi Langsung & Dapatkan Tarif Terbaik</span>
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+        Rencanakan Menginap Nyaman Anda di Hotel Royal Inn Sekarang
+      </h2>
+      <p class="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+        Pemesanan praktis tanpa ribet, bebas biaya admin tersembunyi, langsung terhubung ke staf hotel kami.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="openReservationModal()" class="w-full sm:w-auto py-3.5 px-8 rounded-full bg-amber-500 hover:bg-amber-600 text-stone-950 font-extrabold text-base shadow-xl transition-all duration-200">
+          Booking Kamar Sekarang
+        </button>
+        <a href="#" class="wa-direct-link w-full sm:w-auto py-3.5 px-8 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-base transition-colors">
+          Hubungi Admin Hotel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-stone-950 text-stone-400 text-sm pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-serif text-xl font-bold">
+              R
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold text-white block">Hotel Royal Inn</span>
+              <span class="text-xs text-amber-400 block -mt-1">Pancoran Group • Gambiran</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
+            Menghadirkan kenyamanan menginap yang ramah dengan kebersihan terjaga, fasilitas modern, dan harga yang bersahabat untuk semua kalangan tamu.
+          </p>
+          <div class="flex items-center gap-3 text-xs text-stone-300">
+            <span class="inline-flex items-center gap-1 bg-stone-900 border border-stone-800 px-3 py-1.5 rounded-lg">
+              ⏰ Resepsionis 24 Jam
+            </span>
+            <span class="inline-flex items-center gap-1 bg-stone-900 border border-stone-800 px-3 py-1.5 rounded-lg">
+              🛡️ CCTV & Security 24/7
+            </span>
+          </div>
+        </div>
+
+        <!-- Tipe Kamar Links -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Pilihan Tipe Kamar</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Ekonomi (Double Bed)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Standart (Two Bed)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Superior (Hot Water & Amenities)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Delux A (Big Bed & Smart TV)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Delux B (Kettle & Breakfast)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Delux C (Two Bed & Breakfast)</a></li>
+            <li><a href="#kamar" class="hover:text-amber-400 transition-colors">Family Room (Bathtub & 3 Pax)</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigasi Cepat -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Menu Halaman</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a></li>
+            <li><a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang Hotel</a></li>
+            <li><a href="#fasilitas" class="hover:text-amber-400 transition-colors">Fasilitas Hotel</a></li>
+            <li><a href="#lokasi" class="hover:text-amber-400 transition-colors">Lokasi & Peta</a></li>
+            <li><a href="#faq" class="hover:text-amber-400 transition-colors">Pertanyaan Umum (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak Langsung -->
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Kontak & Reservasi</h4>
+          <div class="space-y-2 text-xs">
+            <p class="flex items-start gap-2">
+              <span class="text-amber-400">📍</span>
+              <span class="hotel-address">Pusat Kota</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-amber-400">📞</span>
+              <span class="hotel-phone">+62 812-3309-2237</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="text-amber-400">✉️</span>
+              <span class="hotel-email">reservasi@hotelroyalinn.com</span>
+            </p>
+            <div class="pt-2">
+              <a href="#" class="wa-direct-link inline-block py-2 px-3 rounded-lg bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold hover:bg-emerald-600/30">
+                Chat WhatsApp Front Desk
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <p>© 2026 Hotel Royal Inn. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Dirancang untuk Pengalaman Reservasi Tamu yang Mudah & Cepat.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <aside aria-label="Floating WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <!-- Pop up greeting speech bubble on desktop -->
+    <div class="hidden sm:flex items-center bg-white text-stone-800 text-xs font-bold py-2 px-3.5 rounded-2xl shadow-xl border border-stone-200">
+      <span>Butuh bantuan reservasi? Chat kami! 👋</span>
+    </div>
+    <a href="#" class="wa-direct-link relative group w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white flex items-center justify-center shadow-2xl transition-transform duration-300 hover:scale-110" aria-label="Hubungi via WhatsApp">
+      <!-- Pulse Effect -->
+      <span class="absolute -inset-1 rounded-full bg-emerald-500/40 animate-ping"></span>
+      <!-- SVG WhatsApp Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" class="relative z-10">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.58c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31Z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- ================= MODAL DETAIL KAMAR ================= -->
+  <div id="room-detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Detail Kamar">
+    <div class="bg-white rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      <div id="room-detail-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL RESERVASI WHATSAPP ================= -->
+  <div id="reservation-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Reservasi Kamar">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="bg-stone-900 text-white p-6 relative">
+        <button onclick="closeReservationModal()" class="absolute top-5 right-5 text-stone-400 hover:text-white transition-colors text-xl font-bold" aria-label="Tutup">
+          ✕
+        </button>
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Formulir Pemesanan</span>
+        <h3 class="text-2xl font-bold mt-1">Reservasi Kamar Hotel Royal Inn</h3>
+        <p class="text-xs text-stone-300 mt-1">Detail pesanan Anda akan dirangkum rapi dan diteruskan langsung ke WhatsApp Resepsionis.</p>
+      </div>
+
+      <!-- Modal Body -->
+      <form onsubmit="submitReservationToWhatsApp(event)" class="p-6 space-y-4 max-h-[75vh] overflow-y-auto">
+        
+        <!-- Nama Tamu -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Nama Lengkap Pemesan *</label>
+          <input type="text" id="guest-name" required placeholder="Contoh: Budi Santoso" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-sm bg-stone-50">
+        </div>
+
+        <!-- No HP / WhatsApp -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Nomor WhatsApp / HP Aktif *</label>
+          <input type="tel" id="guest-phone" required placeholder="Contoh: 08123456789" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-sm bg-stone-50">
+        </div>
+
+        <!-- Tipe Kamar -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Pilihan Tipe Kamar *</label>
+          <select id="modal-roomtype" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-sm bg-stone-50 font-medium">
+            <!-- Populated by JS -->
+          </select>
+        </div>
+
+        <!-- Tanggal Check-in & Check-out -->
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Check-in *</label>
+            <input type="date" id="modal-checkin" required class="w-full px-3 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm bg-stone-50">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Check-out *</label>
+            <input type="date" id="modal-checkout" required class="w-full px-3 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm bg-stone-50">
+          </div>
+        </div>
+
+        <!-- Jumlah Tamu -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Jumlah Tamu</label>
+          <select id="modal-guests" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-sm bg-stone-50">
+            <option value="1 Orang">1 Tamu Dewasa</option>
+            <option value="2 Orang Dewasa" selected>2 Tamu Dewasa</option>
+            <option value="3 Tamu (Keluarga)">3 Tamu (Keluarga)</option>
+            <option value="4 Tamu (Family Room)">4 - 5 Tamu (Family Room)</option>
+            <option value="Rombongan / Grup">Rombongan (> 5 Orang)</option>
+          </select>
+        </div>
+
+        <!-- Catatan Tambahan -->
+        <div>
+          <label class="block text-xs font-bold text-stone-700 uppercase mb-1">Catatan Tambahan (Opsional)</label>
+          <textarea id="guest-note" rows="2" placeholder="Contoh: Mohon siapkan kamar bebas asap rokok / perkiraan tiba jam 15:00 WIB" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 focus:border-amber-600 focus:ring-1 focus:ring-amber-600 text-xs sm:text-sm bg-stone-50"></textarea>
+        </div>
+
+        <!-- Ringkasan Durasi & Keterangan Tarif -->
+        <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-stone-500 block">Durasi Rencana Menginap:</span>
+            <span id="summary-duration" class="font-bold text-stone-900 text-sm">1 Malam</span>
+          </div>
+          <div class="text-right">
+            <span class="text-xs text-stone-500 block">Status Tarif:</span>
+            <span class="font-bold text-amber-700 text-xs sm:text-sm bg-amber-100/80 px-2 py-1 rounded-md">Konfirmasi via WhatsApp</span>
+          </div>
+        </div>
+
+        <!-- Submit to WhatsApp Button -->
+        <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-bold text-base shadow-lg transition-all duration-200 flex items-center justify-center gap-2">
+          <span>Kirim Pesanan ke WhatsApp Admin</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+
+        <p class="text-[11px] text-center text-stone-500">
+          Admin kami akan segera membalas untuk konfirmasi nomor kamar & instruksi pembayaran.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT INCLUSIONS -->
+  <script src="./hotelConfig.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
