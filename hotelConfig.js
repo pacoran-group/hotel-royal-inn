@@ -1,21 +1,22 @@
 /**
- * HOTEL ROYAL INN - PANCORAN GROUP
+ * ROYAL INN HOTEL - PANCORAN GROUP
  * KONFIGURASI UTAMA
  * -------------------------------------------------------------
- * Data resmi tipe kamar, fasilitas, foto asli, kontak, dan lokasi Hotel Royal Inn.
+ * Data resmi tipe kamar, fasilitas, logo resmi, foto asli, kontak, dan lokasi Royal Inn Hotel.
  */
 
 const hotelConfig = {
   // Informasi Umum Hotel
   hotel: {
-    name: "Hotel Royal Inn",
+    name: "Royal Inn Hotel",
     group: "Pancoran Group",
-    badge: "Pancoran Group • Penginapan Nyaman",
-    tagline: "Kenyamanan Menginap Nyaman & Bersih dengan Tarif Bersahabat",
+    logoUrl: "./Logo%20Grand%20Royal.png",
+    badge: "Pancoran Group • Clean & Comfortable",
+    tagline: "Clean and Comfortable Place to Stay",
     subTagline: "Pilihan menginap terbaik untuk transit perjalanan, urusan bisnis, maupun istirahat keluarga di Gambiran, Banyuwangi. Fasilitas lengkap, kamar bersih, dan pelayanan ramah 24 jam.",
     address: "Jl. Raya Yosomulyo No. 67, Dsn. Krajan 1, Desa Gambiran, Kec. Gambiran, Kab. Banyuwangi, Jawa Timur 68486",
     phone: "+62 812-3309-2237",
-    whatsappNumber: "6281233092237", // Nomor WhatsApp aktif Front Desk Hotel Royal Inn
+    whatsappNumber: "6281233092237", // Nomor WhatsApp aktif Front Desk Royal Inn Hotel
     email: "royalinn.gambiran@gmail.com",
     checkInTime: "14:00 WIB",
     checkOutTime: "12:00 WIB",
@@ -77,7 +78,7 @@ const hotelConfig = {
     }
   ],
 
-  // 7 Tipe Kamar Resmi dengan Foto Asli Hotel Royal Inn
+  // 7 Tipe Kamar Resmi dengan Foto Asli Royal Inn Hotel
   rooms: [
     {
       id: "ekonomi",
@@ -340,7 +341,7 @@ const hotelConfig = {
   // Tanya Jawab Umum (FAQ)
   faqs: [
     {
-      q: "Jam berapa waktu Check-in dan Check-out di Hotel Royal Inn?",
+      q: "Jam berapa waktu Check-in dan Check-out di Royal Inn Hotel?",
       a: "Waktu standar Check-in dimulai pukul 14:00 WIB, dan waktu Check-out maksimal pukul 12:00 WIB. Resepsionis kami bertugas 24 jam nonstop."
     },
     {
@@ -360,7 +361,7 @@ const hotelConfig = {
       a: "Delux A memiliki Double Bed (Big Bed), AC, Hot Water, Smart TV, dan Amenities. Delux B memiliki Double Bed, Smart TV, Hot Water, Electric Kettle, Amenities, dan tambahan Breakfast 2 Pax. Sedangkan Delux C memiliki Two Bed (Twin Bed), Smart TV, Hot Water, Electric Kettle, Amenities, serta Breakfast 2 Pax."
     },
     {
-      q: "Di mana alamat persis Hotel Royal Inn?",
+      q: "Di mana alamat persis Royal Inn Hotel?",
       a: "Alamat kami berada di Jl. Raya Yosomulyo No. 67, Dsn. Krajan 1, Desa Gambiran, Kec. Gambiran, Kab. Banyuwangi. Anda dapat melihat lokasi persis di Google Maps melalui tautan: https://maps.app.goo.gl/wrQA9beSf9cx9Qnk6"
     }
   ]

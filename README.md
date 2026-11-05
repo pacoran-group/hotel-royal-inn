@@ -1,11 +1,14 @@
-# Landing Page Hotel Royal Inn 🏨
-> Landing page modern, elegan, dan berkonversi tinggi untuk **Hotel Royal Inn** (Pancoran Group, Gambiran Banyuwangi). Dilengkapi dengan formulir reservasi interaktif yang langsung terhubung ke WhatsApp Admin, katalog 7 tipe kamar, peta Google Maps, dan ulasan tamu.
+# Landing Page Royal Inn Hotel 🏨
+> Landing page modern, elegan, dan berkonversi tinggi untuk **Royal Inn Hotel** (Pancoran Group, Gambiran Banyuwangi) dengan moto resmi *"Clean and comfortable place to stay"*. Dilengkapi dengan formulir reservasi interaktif yang langsung terhubung ke WhatsApp Admin, katalog 7 tipe kamar, peta Google Maps, dan logo resmi.
 
 ---
 
 ## 🌟 Fitur Utama
 
-1. **Alur Reservasi Interaktif via WhatsApp**:
+1. **Branding & Logo Resmi**:
+   - Menampilkan logo resmi berlambang mahkota emas: **Royal Inn Hotel - Clean and comfortable place to stay** pada Navbar, Footer, dan Favicon browser.
+
+2. **Alur Reservasi Interaktif via WhatsApp**:
    - Tamu memilih tanggal Check-in, Check-out, tipe kamar, jumlah tamu, nama, dan catatan khusus.
    - Sistem otomatis menghitung durasi menginap (jumlah malam) dan estimasi total biaya.
    - Mengirimkan pesan WhatsApp dengan template reservasi yang rapi dan profesional langsung ke Front Desk/Admin.
